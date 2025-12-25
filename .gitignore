@@ -13,6 +13,9 @@ bld/
 [Ll]og/
 [Ll]ogs/
 
+# Test projects
+Sims4ModConstructor.ConsoleTest/
+
 # Visual Studio
 .vs/
 *.user
