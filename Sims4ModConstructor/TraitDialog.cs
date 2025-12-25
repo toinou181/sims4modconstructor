@@ -65,7 +65,11 @@ public partial class TraitDialog : Form
             foreach (var item in lstConflictingTraits.Items)
             {
                 if (item != null)
-                    Trait.ConflictingTraits.Add(item.ToString()!);
+                {
+                    var traitName = item.ToString();
+                    if (traitName != null)
+                        Trait.ConflictingTraits.Add(traitName);
+                }
             }
         }
         

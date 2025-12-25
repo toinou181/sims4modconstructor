@@ -71,7 +71,11 @@ public partial class InteractionDialog : Form
             foreach (var item in lstBuffs.Items)
             {
                 if (item != null)
-                    Interaction.BuffsToApply.Add(item.ToString()!);
+                {
+                    var buffName = item.ToString();
+                    if (buffName != null)
+                        Interaction.BuffsToApply.Add(buffName);
+                }
             }
         }
         
