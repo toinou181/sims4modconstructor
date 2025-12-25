@@ -16,6 +16,9 @@ bld/
 # Test projects
 Sims4ModConstructor.ConsoleTest/
 
+# Published output
+[Pp]ublish/
+
 # Visual Studio
 .vs/
 *.user
