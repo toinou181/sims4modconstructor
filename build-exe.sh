@@ -1,11 +1,19 @@
 #!/bin/bash
 # Build script for creating standalone executable
 # This creates a self-contained, single-file .exe that can be distributed
+# Note: This builds for Windows (win-x64) regardless of the host platform
 
 echo "========================================"
 echo "Building Sims4ModConstructor Executable"
 echo "========================================"
 echo ""
+
+if [ ! -d "Sims4ModConstructor" ]; then
+    echo "ERROR: Sims4ModConstructor directory not found!"
+    echo "Please run this script from the repository root directory."
+    echo ""
+    exit 1
+fi
 
 cd Sims4ModConstructor
 

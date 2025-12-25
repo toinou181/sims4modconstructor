@@ -7,6 +7,14 @@ echo Building Sims4ModConstructor Executable
 echo ========================================
 echo.
 
+if not exist "Sims4ModConstructor" (
+    echo ERROR: Sims4ModConstructor directory not found!
+    echo Please run this script from the repository root directory.
+    echo.
+    pause
+    exit /b 1
+)
+
 cd Sims4ModConstructor
 
 echo Restoring dependencies...
