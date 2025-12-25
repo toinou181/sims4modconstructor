@@ -29,21 +29,27 @@ A Windows Forms application for creating Sims 4 mods with support for both XML a
 
 ## Requirements
 
-- .NET 8.0 or later
+- .NET 8.0 or later (for development)
 - Windows operating system (WinForms application)
 
-## Building
+## Getting the Application
+
+### Option 1: Download Pre-built Executable (Recommended for Users)
+
+Run the build script to create a standalone executable:
+- **Windows**: Double-click `build-exe.bat` or run it from command line
+- **Linux/macOS**: Run `./build-exe.sh` in terminal
+
+The executable will be created at `publish/Sims4ModConstructor.exe` (≈162 MB, includes .NET runtime).
+
+See [BUILD.md](BUILD.md) for detailed build instructions and options.
+
+### Option 2: Run from Source (For Developers)
 
 ```bash
 cd Sims4ModConstructor
 dotnet restore
 dotnet build
-```
-
-## Running
-
-```bash
-cd Sims4ModConstructor
 dotnet run
 ```
 

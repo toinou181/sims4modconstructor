@@ -4,6 +4,19 @@ This guide will help you get started with creating your first Sims 4 mod.
 
 ## Quick Start
 
+### Option 1: Using Pre-built Executable (Easiest)
+
+1. **Get the executable**
+   - Run `build-exe.bat` (Windows) or `./build-exe.sh` (Linux/macOS) to create it
+   - Or download a pre-built release if available
+   
+2. **Run the application**
+   - Navigate to the `publish/` folder
+   - Double-click `Sims4ModConstructor.exe`
+   - No .NET installation required!
+
+### Option 2: Run from Source (For Developers)
+
 1. **Build the application**
    ```bash
    cd Sims4ModConstructor
