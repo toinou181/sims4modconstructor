@@ -1,0 +1,80 @@
+{
+  "ProjectName": "MyAwesomeMod",
+  "Author": "ModCreator",
+  "Version": "1.0.0",
+  "Description": "An example Sims 4 mod with custom interactions, buffs, and traits",
+  "ModType": 2,
+  "Interactions": [
+    {
+      "Name": "FriendlyHug",
+      "DisplayName": "Friendly Hug",
+      "Description": "Give a warm friendly hug to another sim",
+      "Category": 1,
+      "Priority": 5,
+      "IsAutonomous": true,
+      "BuffsToApply": [
+        "HappyMood",
+        "EnergyBoost"
+      ]
+    },
+    {
+      "Name": "TellJoke",
+      "DisplayName": "Tell Funny Joke",
+      "Description": "Tell a hilarious joke to make sims laugh",
+      "Category": 2,
+      "Priority": 3,
+      "IsAutonomous": false,
+      "BuffsToApply": [
+        "PlayfulMood"
+      ]
+    }
+  ],
+  "Buffs": [
+    {
+      "Name": "HappyMood",
+      "DisplayName": "Feeling Happy",
+      "Description": "This sim is feeling very happy!",
+      "MoodType": 0,
+      "MoodWeight": 2,
+      "Duration": 240,
+      "IsVisible": true
+    },
+    {
+      "Name": "PlayfulMood",
+      "DisplayName": "Playful Mood",
+      "Description": "This sim is in a playful mood after hearing a joke",
+      "MoodType": 3,
+      "MoodWeight": 1,
+      "Duration": 180,
+      "IsVisible": true
+    },
+    {
+      "Name": "EnergyBoost",
+      "DisplayName": "Energized",
+      "Description": "This sim feels energized",
+      "MoodType": 7,
+      "MoodWeight": 1,
+      "Duration": 120,
+      "IsVisible": true
+    }
+  ],
+  "Traits": [
+    {
+      "Name": "Sociable",
+      "DisplayName": "Super Sociable",
+      "Description": "This sim loves being around others and gets energy from social interactions",
+      "Category": 0,
+      "ConflictingTraits": [
+        "Loner",
+        "Antisocial"
+      ]
+    },
+    {
+      "Name": "Creative",
+      "DisplayName": "Creative Genius",
+      "Description": "This sim has a creative mind and excels at artistic activities",
+      "Category": 3,
+      "ConflictingTraits": []
+    }
+  ]
+}
