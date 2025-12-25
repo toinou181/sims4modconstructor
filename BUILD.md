@@ -168,7 +168,7 @@ To update the version number of your executable, edit `Sims4ModConstructor.cspro
   <FileVersion>1.0.0.0</FileVersion>
   <Product>Sims4ModConstructor</Product>
   <Company>Your Name</Company>
-  <Copyright>Copyright © 2024</Copyright>
+  <Copyright>Copyright © YYYY</Copyright>
 </PropertyGroup>
 ```
 

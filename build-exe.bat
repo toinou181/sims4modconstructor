@@ -36,7 +36,12 @@ if %ERRORLEVEL% neq 0 (
 
 echo.
 echo Publishing self-contained executable...
-dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:PublishReadyToRun=true -o ../publish
+dotnet publish -c Release ^
+  -r win-x64 ^
+  --self-contained true ^
+  -p:PublishSingleFile=true ^
+  -p:PublishReadyToRun=true ^
+  -o ../publish
 if %ERRORLEVEL% neq 0 (
     echo Publishing failed!
     pause
